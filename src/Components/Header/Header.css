@@ -1,6 +1,9 @@
 .header {
   background-color: #272727;
   color: #ffffff;
+
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .navbar li {
@@ -9,4 +12,9 @@
 
 .navbar-btn {
   margin: 15px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
 }
