@@ -6,7 +6,7 @@ import WhatWeDo from "../WhatWeDo/WhatWeDo.js";
 import WhoWeAre from "../WhoWeAre/WhoWeAre.js";
 import Contact from "../Contact/Contact.js";
 
-function Header({ header }) {
+function Header() {
   return (
     <Router>
       <div className="header">
@@ -21,7 +21,6 @@ function Header({ header }) {
           <li className="navbar-btn">
             <Link to="/contact">Contact</Link>
           </li>
-          {header}
         </ul>
       </div>
     </Router>

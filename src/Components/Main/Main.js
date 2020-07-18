@@ -10,7 +10,6 @@ import Contact from "../Contact/Contact.js";
 function Main() {
   return (
     <div className="main">
-      Palace o Main
       <Router>
         <Switch>
           <Route exact path={`/who-we-are`} component={WhoWeAre}></Route>
