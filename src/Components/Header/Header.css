@@ -1,0 +1,12 @@
+.header {
+  background-color: #272727;
+  color: #ffffff;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar-btn {
+  margin: 15px;
+}
