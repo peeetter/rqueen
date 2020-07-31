@@ -1,6 +1,8 @@
 import React from "react";
 import "./Main.css";
-import { Switch, Route } from "react-router-dom";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import WhatWeDo from "../WhatWeDo/WhatWeDo.js";
 import WhoWeAre from "../WhoWeAre/WhoWeAre.js";
 import Contact from "../Contact/Contact.js";
@@ -11,9 +13,9 @@ function Main() {
     <div className="main">
       <Switch>
         <Route exact path="/" component={Home}></Route>
-        <Route path={`/who-we-are`} component={WhoWeAre}></Route>
-        <Route path="/what-we-do" component={WhatWeDo}></Route>
-        <Route path="/contact" component={Contact}></Route>
+        <Route exact path={`/who-we-are`} component={WhoWeAre}></Route>
+        <Route exact path="/what-we-do" component={WhatWeDo}></Route>
+        <Route exact path="/contact" component={Contact}></Route>
       </Switch>
     </div>
   );

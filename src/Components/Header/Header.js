@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import Logo from "../Logo/Logo";
 
 function Header() {
   return (
     <div className="header">
+      <Logo />
       <ul className="navbar">
         <li className="navbar-btn">
           <Link to="/who-we-are" className="link">

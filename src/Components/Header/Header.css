@@ -4,6 +4,9 @@
 
   font-size: 14px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
 }
 
 .navbar li {
