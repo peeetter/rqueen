@@ -42,7 +42,7 @@
 
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
-  animation-delay: 150ms;
+  animation-delay: 125ms;
   visibility: hidden;
 }
 
@@ -55,9 +55,9 @@
 
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-  animation: 1s fadeIn;
+  animation: 1.2s fadeIn;
   animation-fill-mode: forwards;
-  animation-delay: 350ms;
+  animation-delay: 180ms;
 
   visibility: hidden;
 }
