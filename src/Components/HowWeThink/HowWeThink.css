@@ -1,0 +1,22 @@
+.who-we-are-container {
+  background-color: #f4f1d0;
+
+  height: 400px;
+}
+
+.who-we-are-container-text {
+  color: rgba(39, 39, 39, 0.85);
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 46px;
+  /* or 164% */
+  text-align: center;
+
+  position: absolute;
+  width: 539px;
+  height: 205px;
+  left: 170px;
+  top: 205px;
+}

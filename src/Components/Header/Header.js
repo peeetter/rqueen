@@ -7,24 +7,25 @@ function Header() {
   return (
     <div className="header">
       <Logo />
-      <ul className="navbar">
-        <li className="navbar-btn">
-          <Link to="/who-we-are" className="link">
-            Who we are
-          </Link>
-        </li>
-
-        <li className="navbar-btn">
-          <Link to="/what-we-do" className="link">
-            What we do
-          </Link>
-        </li>
-        <li className="navbar-btn">
-          <Link to="/contact" className="link">
-            Contact
-          </Link>
-        </li>
-      </ul>
+      <div className="navbar">
+        <ul className="navbar-menu">
+          <li className="navbar-btn what-we-do">
+            <Link to="/what-we-do" className="link">
+              What we do
+            </Link>
+          </li>
+          <li className="navbar-btn how-we-think">
+            <Link to="/who-we-are" className="link">
+              How we think
+            </Link>
+          </li>
+          <li className="navbar-btn contact">
+            <Link to="/contact" className="link">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
