@@ -9,8 +9,8 @@
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 46px;
+  font-size: 12px;
+
   /* or 164% */
   text-align: center;
 
@@ -18,5 +18,5 @@
   width: 539px;
   height: 205px;
   left: 170px;
-  top: 205px;
+  top: 120px;
 }
