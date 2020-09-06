@@ -1,15 +1,9 @@
 .header {
-  background-color: #272727;
-  color: #818076;
+  background: rgba(39, 39, 39, 0.85);
   display: flex;
   flex-direction: row;
   padding: 20px;
 
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
   /* identical to box height */
 }
 
@@ -21,23 +15,16 @@
   display: inline;
 }
 
-.what-we-do {
-  /*left: 542px;*/
-}
-
-.how-we-think {
-  /*left: 662px;*/
-}
-
-.contact {
-  /*left: 782px;*/
-}
-
 .navbar-btn {
   margin: 15px;
 }
 
 .link {
-  color: white;
+  color: #f4f1d0;
   text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
 }

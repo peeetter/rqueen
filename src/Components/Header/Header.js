@@ -9,17 +9,17 @@ function Header() {
       <Logo />
       <div className="navbar">
         <ul className="navbar-menu">
-          <li className="navbar-btn what-we-do">
+          <li className="navbar-btn">
             <Link to="/what-we-do" className="link">
               What we do
             </Link>
           </li>
-          <li className="navbar-btn how-we-think">
+          <li className="navbar-btn">
             <Link to="/who-we-are" className="link">
               How we think
             </Link>
           </li>
-          <li className="navbar-btn contact">
+          <li className="navbar-btn">
             <Link to="/contact" className="link">
               Contact
             </Link>
