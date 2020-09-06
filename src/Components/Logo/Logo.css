@@ -62,6 +62,16 @@
   visibility: hidden;
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .spin {
   /* width:100px;
     height:100px;
