@@ -20,3 +20,11 @@
   left: 170px;
   top: 120px;
 }
+
+.how-we-think-underdiv {
+  height: 100%;
+  background-color: #ffffff;
+  margin-top: 40%;
+  transform: skewY(-4deg);
+  height: 500px;
+}

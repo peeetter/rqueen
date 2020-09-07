@@ -72,6 +72,53 @@
   flex-direction: column;
 }
 
+.logo-text-red-queen {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-text-red {
+  position: absolute;
+  left: 100px;
+  top: 28px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ff5858;
+}
+
+.logo-text-queen {
+  position: absolute;
+  left: 142px;
+  top: 28px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #f4f1d0;
+}
+
+.logo-text-solutions {
+  position: absolute;
+  left: 100px;
+  top: 51px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #f4f1d0;
+}
+
 .spin {
   /* width:100px;
     height:100px;

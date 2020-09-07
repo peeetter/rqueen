@@ -15,6 +15,7 @@ const HowWeThink = () => {
           amazing than the last one.
         </p>
       </div>
+      <div className="how-we-think-underdiv"></div>
     </div>
   );
 };

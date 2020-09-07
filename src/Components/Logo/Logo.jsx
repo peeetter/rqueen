@@ -10,7 +10,8 @@ export default function Logo() {
       </div>
       <div className="logo-text">
         <div className="logo-text-red-queen">
-          <div className="logo-text-red">RED QUEEN</div>
+          <div className="logo-text-red">RED</div>
+          <div className="logo-text-queen">QUEEN</div>
         </div>
         <div className="logo-text-solutions">SOLUTIONS</div>
       </div>

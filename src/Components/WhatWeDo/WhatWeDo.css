@@ -1,6 +1,12 @@
+.what-we-do {
+  background-color: white;
+}
+
 .what-we-do-container {
+  display: flex;
+  flex-direction: column;
   background-color: #f4f1d0;
-  height: 400px;
+  height: 600px;
 }
 
 .what-we-do-container-text {
@@ -18,6 +24,15 @@
   height: 205px;
   left: 170px;
   top: 205px;
+  background-color: #f4f1d0;
+}
+
+.what-we-do-underdiv {
+  height: 100%;
+  background-color: #ffffff;
+  margin-top: 40%;
+  transform: skewY(-4deg);
+  height: 500px;
 }
 
 .container-hire-us {
