@@ -28,3 +28,15 @@
   font-size: 14px;
   line-height: 19px;
 }
+
+.is-active {
+  color: #f4f1d0;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid red;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
