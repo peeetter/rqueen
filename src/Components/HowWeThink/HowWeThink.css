@@ -1,7 +1,12 @@
 .who-we-are-container {
   background-color: #f4f1d0;
-
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+  /* animation: 2000ms fadeIn; */
+  height: 100%;
 }
 
 .who-we-are-container-text {
@@ -9,16 +14,16 @@
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-
+  font-size: 18px;
+  width: 70vh;
   /* or 164% */
   text-align: center;
-
-  position: absolute;
-  width: 539px;
+  line-height: 40px;
+  /* position: absolute; */
+  /* width: 539px;
   height: 205px;
   left: 170px;
-  top: 120px;
+  top: 120px; */
 }
 
 .how-we-think-underdiv {

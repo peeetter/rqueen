@@ -1,19 +1,16 @@
 import React from "react";
 import "./Logo.css";
+import { ReactComponent as LogoText } from "./logotext.svg";
 export default function Logo() {
   return (
-    <div className="logo">
+    <div className="Logo">
       <div className="LogoRedCircle">
         <div className="LogoFirstTriangle"></div>
         <div className="LogoSecondTriangle"></div>
         <div className="LogoThirdTriangle"></div>
       </div>
-      <div className="logo-text">
-        <div className="logo-text-red-queen">
-          <div className="logo-text-red">RED</div>
-          <div className="logo-text-queen">QUEEN</div>
-        </div>
-        <div className="logo-text-solutions">SOLUTIONS</div>
+      <div className="LogoText">
+        <LogoText />
       </div>
     </div>
   );

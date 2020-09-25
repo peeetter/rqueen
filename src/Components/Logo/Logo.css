@@ -62,14 +62,14 @@
   visibility: hidden;
 }
 
-.logo {
+.Logo {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
+.LogoText {
+  margin: 0 0 0 10px;
 }
 
 .logo-text-red-queen {

@@ -1,12 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import Logo from "../Logo/Logo";
 
 function Header() {
   return (
     <div className="header">
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
 
       <div className="navbar">
         <ul className="navbar-menu">
