@@ -77,34 +77,6 @@
   flex-direction: row;
 }
 
-.logo-text-red {
-  position: absolute;
-  left: 100px;
-  top: 28px;
-
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-
-  color: #ff5858;
-}
-
-.logo-text-queen {
-  position: absolute;
-  left: 142px;
-  top: 28px;
-
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-
-  color: #f4f1d0;
-}
-
 .logo-text-solutions {
   position: absolute;
   left: 100px;

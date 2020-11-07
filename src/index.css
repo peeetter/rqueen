@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f4f1d0;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  /* background-color: #f4f1d0; */
+  position: fixed;
 }
 
 code {
@@ -18,4 +19,17 @@ code {
   font-family: "Open Sans";
   src: local("Open Sans"),
     url(../src/assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }

@@ -1,17 +1,18 @@
 .what-we-do {
   /* background-color: white; */
   height: 100%;
+  width: 100%;
 }
 
 .what-we-do-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  width: 100%;
   /* margin-top: 100px; */
-  animation: 2000ms fadeIn;
+  /* animation: 2000ms fadeIn; */
   height: 100%;
 }
+
 .what-we-do-container-text {
   color: rgba(39, 39, 39, 0.85);
   font-family: Open Sans;
@@ -21,26 +22,17 @@
   line-height: 46px;
 
   text-align: center;
-  width: 40%;
 
-  background-color: #f4f1d0;
+  /* background-color: #f4f1d0; */
   /* animation-delay: 400ms; */
 }
 
-.what-we-do-underdiv {
-  height: 100%;
-  background-color: #ffffff;
-  margin-top: 40%;
-  transform: skewY(-4deg);
-  height: 500px;
-}
-
 .container-hire-us {
-  background: rgba(39, 39, 39, 0.85);
-  opacity: 0.9;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  padding: 10px 40px;
-  margin-top: 40px;
+  background: #ff5858;
+  /* opacity: 0.9; */
+  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); */
+  padding: 10px 20px;
+  /* margin-top: 40px; */
 
   display: flex;
   justify-content: center;
@@ -48,12 +40,7 @@
   cursor: pointer;
 }
 
-.container-hire-us:hover {
-  opacity: 0.5;
-}
-
-.container-hire-us-text {
-  margin: 0 auto;
-  color: #f4f1d0;
-  cursor: pointer;
+.HalfWidth {
+  width: 50%;
+  height: 100%;
 }
