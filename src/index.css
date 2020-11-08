@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow-y: hidden; */
-  /* background-color: #f4f1d0; */
+  background-color: #f8f8f4;
   position: fixed;
 }
 
@@ -21,6 +21,12 @@ code {
     url(../src/assets/fonts/OpenSans-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: local("Open Sans SemiBold"),
+    url(../src/assets/fonts/OpenSans-SemiBold.ttf) format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -31,5 +37,28 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-family: Open Sans;
+  font-size: 24px;
+  /* color: #ff5858; */
+  margin-left: 0;
+  text-align: start;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+}
+
+.RedQueenRed {
+  color: #ff5858;
+}
+
+p {
+  font-family: Open Sans;
+  line-height: 2rem;
+  text-align: start;
+  font-size: 1.1rem;
+  color: #5f5656;
+  /* margin-bottom: 2rem; */
 }

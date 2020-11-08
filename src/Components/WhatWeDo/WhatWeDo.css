@@ -13,34 +13,12 @@
   height: 100%;
 }
 
-.what-we-do-container-text {
-  color: rgba(39, 39, 39, 0.85);
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 46px;
-
-  text-align: center;
-
-  /* background-color: #f4f1d0; */
-  /* animation-delay: 400ms; */
+.LeftSide {
+  flex: 1;
+  /* padding-right: 8rem; */
 }
 
-.container-hire-us {
-  background: #ff5858;
-  /* opacity: 0.9; */
-  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); */
-  padding: 10px 20px;
-  /* margin-top: 40px; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.HalfWidth {
-  width: 50%;
+.RightSide {
   height: 100%;
+  flex: 1.3;
 }

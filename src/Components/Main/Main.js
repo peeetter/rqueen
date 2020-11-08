@@ -12,8 +12,7 @@ function Main() {
     <div className="main">
       <Switch>
         <Route exact path="/" component={WhatWeDo}></Route>
-        <Route exact path={`/who-we-are`} component={HowWeThink}></Route>
-        <Route exact path="/what-we-do" component={WhatWeDo}></Route>
+        <Route exact path={`/about`} component={HowWeThink}></Route>
         <Route exact path="/contact" component={Contact}></Route>
       </Switch>
     </div>

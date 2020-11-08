@@ -12,27 +12,29 @@ function Header() {
 
       <div className="navbar">
         <ul className="navbar-menu">
-          <li className="navbar-btn">
-            <NavLink
-              activeClassName="is-active"
-              to="/what-we-do"
-              className="link"
-            >
+          {/* <li className="navbar-btn">
+            <NavLink activeClassName="is-active" to="/" className="link" exact>
               What we do
             </NavLink>
+          </li> */}
+          <li className="navbar-btn">
+            <NavLink
+              activeClassName="is-active"
+              to="/about"
+              className="link"
+              exact
+            >
+              About
+            </NavLink>
           </li>
           <li className="navbar-btn">
             <NavLink
               activeClassName="is-active"
-              to="/who-we-are"
+              to="/contact"
               className="link"
+              exact
             >
-              How we think
-            </NavLink>
-          </li>
-          <li className="navbar-btn">
-            <NavLink activeClassName="is-active" to="/contact" className="link">
-              Contact
+              Hire us
             </NavLink>
           </li>
         </ul>

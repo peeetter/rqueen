@@ -1,6 +1,6 @@
-import React from "react";
-import { Canvas } from "react-three-fiber";
-import { softShadows, OrbitControls } from "drei";
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "react-three-fiber";
+import { softShadows } from "drei";
 
 softShadows();
 
@@ -22,27 +22,13 @@ const Triangle = ({ position, color }) => (
   </mesh>
 );
 
-function SpinningLogo() {
-  return (
-    <Canvas
-      shadowMap
-      colorManagement
-      camera={{ position: [0, 0.5, 8], fov: 40 }}
-      color="#000000"
-    >
-      <ambientLight intensity={0.6} />
-      <directionalLight
-        castShadow
-        position={[-3, 10, 0]}
-        intensity={1.9}
-        shadow-mapSize-width={1024}
-        shadow-mapSize-height={1024}
-        shadow-camera-far={50}
-        shadow-camera-left={-10}
-        shadow-camera-right={10}
-        shadow-camera-top={10}
-      />
+const TheGroup = () => {
+  const mesh = useRef();
+  useFrame(() => (mesh.current.rotation.y += 0.01));
 
+  return (
+    // <group>
+    <mesh ref={mesh}>
       <Ball />
       <Triangle
         position={[1, 1, 0.5]}
@@ -55,7 +41,53 @@ function SpinningLogo() {
         rotation={[3.8, 0.5, 0.3]}
       />
       <Triangle position={[0, 1, -1]} color="grey" />
-      <OrbitControls autoRotate autoRotateSpeed={5} />
+    </mesh>
+    // </group>
+  );
+};
+
+function SpinningLogo() {
+  return (
+    <Canvas
+      shadowMap
+      colorManagement
+      camera={{ position: [0, 0.5, 9], fov: 40 }}
+      color="#000000"
+    >
+      <ambientLight intensity={0.6} />
+      <directionalLight
+        castShadow
+        position={[-3, 7, 3]}
+        intensity={1.9}
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+        shadow-camera-far={50}
+        shadow-camera-left={-10}
+        shadow-camera-right={10}
+        shadow-camera-top={10}
+      />
+      {/* <pointLight position={[-10, 0, -20]} intensity={0.5} /> */}
+      {/* <pointLight position={[0, -10, 0]} intensity={1.5} /> */}
+
+      {/* Plane to project shadow on */}
+      <group>
+        <mesh
+          receiveShadow
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[0, -3, 0]}
+        >
+          <planeBufferGeometry
+            attach="geometry"
+            args={[100, 100]}
+            rotateX={Math.PI * 0.1}
+          />
+          <shadowMaterial attach="material" opacity={0.3} />
+        </mesh>
+      </group>
+
+      <TheGroup />
+
+      {/* <OrbitControls autoRotateSpeed={5} /> */}
     </Canvas>
   );
 }
