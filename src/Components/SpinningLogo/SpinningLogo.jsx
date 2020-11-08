@@ -51,7 +51,7 @@ function SpinningLogo() {
     <Canvas
       shadowMap
       colorManagement
-      camera={{ position: [0, 0.5, 9], fov: 40 }}
+      camera={{ position: [0, 1.4, 9], fov: 40 }}
       color="#000000"
     >
       <ambientLight intensity={0.6} />
