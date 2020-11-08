@@ -8,6 +8,7 @@ body {
   /* overflow-y: hidden; */
   background-color: #f8f8f4;
   position: fixed;
+  padding: 3rem 6rem;
 }
 
 code {
@@ -37,7 +38,6 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 1.5rem;
 }
 
 h1 {
