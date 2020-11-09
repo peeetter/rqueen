@@ -73,7 +73,7 @@ function SpinningLogo() {
       <ambientLight intensity={0.6} />
       <directionalLight
         castShadow
-        position={[-3, 7, 3]}
+        position={[-5.5, 12, 3]}
         intensity={1.9}
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
