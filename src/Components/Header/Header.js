@@ -34,7 +34,7 @@ function Header() {
               className="link"
               exact
             >
-              Hire us
+              Contact
             </NavLink>
           </li>
         </ul>

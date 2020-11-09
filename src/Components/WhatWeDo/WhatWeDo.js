@@ -20,12 +20,13 @@ const WhatWeDo = () => {
           <h1>Tailor-made software for your business</h1>
           <p>
             In Through the Looking-Glass by Lewis Carroll, the Red Queen is a
-            character who has to keep running just to stay in the same place.
-            <br></br> Likewise, we believe that in a world that is more rapidly
-            changing than ever, companies have to constantly evolve just to keep
-            up with its competition.<br></br> We hold this to be as true for
-            ourselves as for our customers, and we constantly strive to make the
-            current project more amazing than the last one.
+            character<br></br> who needs to keep running in order to stay in the
+            same place.
+            <br></br> Likewise, we believe that in a world which is changing
+            more rapidly than ever, <br></br>companies need to constantly evolve
+            to keep up with their competition.<br></br> We hold this to be as
+            true for ourselves as for our customers, and we constantly strive to
+            make the current project more amazing than the last one.
           </p>
           <br></br>
           <Button text="HIRE US" onClick={() => history.push("/contact")} />
