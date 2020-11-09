@@ -25,23 +25,39 @@ const Triangle = ({ position, color }) => (
 const TheGroup = () => {
   const mesh = useRef();
   useFrame(() => (mesh.current.rotation.y += 0.01));
-
+  const thetaAngle = Math.PI / 4;
+  const phiAngle = [0, (2 * Math.PI) / 3, (4 * Math.PI) / 3];
+  const radius = 1.5;
   return (
     // <group>
     <mesh ref={mesh}>
       <Ball />
       <Triangle
-        position={[1, 1, 0.5]}
+        position={[
+          radius * Math.cos(thetaAngle) * Math.sin(phiAngle[0]),
+          radius * Math.sin(thetaAngle),
+          radius * Math.cos(thetaAngle) * Math.cos(phiAngle[0]),
+        ]}
         color="#F4F1D0"
-        rotation={[0.5 * Math.PI, 0.9 * Math.PI, 0]}
       />
       <Triangle
-        position={[-1, 1, 0.5]}
+        position={[
+          radius * Math.cos(thetaAngle) * Math.sin(phiAngle[1]),
+          radius * Math.sin(thetaAngle),
+          radius * Math.cos(thetaAngle) * Math.cos(phiAngle[1]),
+        ]}
         color="#FCACACA"
-        rotation={[3.8, 0.5, 0.3]}
       />
-      <Triangle position={[0, 1, -1]} color="grey" />
+      <Triangle
+        position={[
+          radius * Math.cos(thetaAngle) * Math.sin(phiAngle[2]),
+          radius * Math.sin(thetaAngle),
+          radius * Math.cos(thetaAngle) * Math.cos(phiAngle[2]),
+        ]}
+        color="grey"
+      />
     </mesh>
+
     // </group>
   );
 };
@@ -52,7 +68,7 @@ function SpinningLogo() {
       shadowMap
       colorManagement
       camera={{ position: [0, 1.4, 9], fov: 40 }}
-      color="#000000"
+      // color="#000000"
     >
       <ambientLight intensity={0.6} />
       <directionalLight
@@ -86,8 +102,7 @@ function SpinningLogo() {
       </group>
 
       <TheGroup />
-
-      {/* <OrbitControls autoRotateSpeed={5} /> */}
+      {/* <OrbitControls /> */}
     </Canvas>
   );
 }
