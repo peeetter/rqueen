@@ -17,6 +17,14 @@
   margin: auto 0;
 }
 
+.LeftSide p {
+  margin: 19px 0;
+}
+
+.LeftSide p {
+  margin: 20px 0 20px 0;
+}
+
 .RightSide {
   height: 70%;
   flex: 1.3;

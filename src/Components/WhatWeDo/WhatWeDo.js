@@ -19,7 +19,7 @@ const WhatWeDo = () => {
         <h1>
           Tailor-made software<br></br> for your business
         </h1>
-        <p>
+        <p className="WhatWeDoParagraph">
           In Through the Looking-Glass by Lewis Carroll, the Red Queen is a
           character<br></br> who needs to keep running in order to stay in the
           same place.
