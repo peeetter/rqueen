@@ -1,7 +1,12 @@
-/* .contact-container {
-  background-color: #f4f1d0;
-  height: 400px;
-} */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+  /* animation: 2000ms fadeIn; */
+  height: 100%;
+}
 
 /* .contact-container {
   background-color: #f4f1d0;

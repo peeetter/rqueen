@@ -4,9 +4,8 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <div className="contact-container-text">
-        contact@redqueenssolutions.se
-      </div>
+      <p className="who-we-are-container-text">contact@redqueenssolutions.se</p>
+      {/* <div className="how-we-think-underdiv"></div> */}
     </div>
   );
 };
