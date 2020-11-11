@@ -2,23 +2,23 @@
   /* background-color: white; */
   height: 100%;
   width: 100%;
-}
-
-.what-we-do-content {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  /* margin-top: 100px; */
-  /* animation: 2000ms fadeIn; */
-  height: 100%;
+  flex-wrap: wrap-reverse;
 }
 
 .LeftSide {
   flex: 1;
-  /* padding-right: 8rem; */
+  padding-left: 7%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
 }
 
 .RightSide {
-  height: 100%;
+  height: 70%;
   flex: 1.3;
+  margin: auto;
 }

@@ -6,7 +6,7 @@ softShadows();
 
 const Ball = () => (
   <mesh castShadow position={[0, 0.2, 0]}>
-    <sphereBufferGeometry attach="geometry" args={[1, 35, 35]} />
+    <sphereBufferGeometry attach="geometry" args={[0.92, 35, 35]} />
     <meshStandardMaterial attach="material" color="#FF5858" />
   </mesh>
 );
@@ -73,7 +73,7 @@ function SpinningLogo() {
       <ambientLight intensity={0.6} />
       <directionalLight
         castShadow
-        position={[-5.5, 12, 3]}
+        position={[-2, 5, 1.5]}
         intensity={1.9}
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
@@ -90,7 +90,7 @@ function SpinningLogo() {
         <mesh
           receiveShadow
           rotation={[-Math.PI / 2, 0, 0]}
-          position={[0, -3, 0]}
+          position={[0, -2.5, 0]}
         >
           <planeBufferGeometry
             attach="geometry"
