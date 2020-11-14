@@ -11,7 +11,7 @@ const WhatWeDo = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 1200 },
+    config: { mass: 65, tension: 200, friction: 76 },
   });
   return (
     <div className="what-we-do">
