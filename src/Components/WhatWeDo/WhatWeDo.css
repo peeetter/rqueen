@@ -33,9 +33,22 @@
   min-width: 300px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .RightSide {
-    min-height: 400px;
-    border: 1px solid black;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .RightSide {
+    /* min-height: 400px;
+    border: 1px solid black; */
+    display: none;
+  }
+  .LeftSide {
+    align-items: center;
+  }
+  .LeftSide h1 {
+    width: 100%;
   }
 }

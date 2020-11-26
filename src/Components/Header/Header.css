@@ -5,14 +5,18 @@
   /* padding-right: 10%; */
   /* padding: 20px 10% 20px 20px; */
   justify-content: space-between;
-
+  height: 80px;
   /* identical to box height */
 }
 
-/* .navbar {
-  right: 1px;
-  position: absolute;
-} */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.navbar-menu {
+  overflow-y: hidden;
+}
 .navbar-menu li {
   display: inline;
 }
@@ -34,4 +38,10 @@
 .is-active {
   padding-bottom: 3px;
   border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
 }

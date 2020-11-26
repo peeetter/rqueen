@@ -1,4 +1,4 @@
 .main {
   text-align: center;
-  height: calc(100vh - 250px);
+  height: calc(100% - 80px);
 }
