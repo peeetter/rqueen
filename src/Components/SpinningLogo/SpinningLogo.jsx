@@ -27,7 +27,7 @@ const TheGroup = () => {
   useFrame(() => (mesh.current.rotation.y += 0.01));
   const thetaAngle = Math.PI / 4;
   const phiAngle = [0, (2 * Math.PI) / 3, (4 * Math.PI) / 3];
-  const radius = 1.5;
+  const radius = 1.44;
   return (
     // <group>
     <mesh ref={mesh}>
@@ -67,13 +67,13 @@ function SpinningLogo() {
     <Canvas
       shadowMap
       colorManagement
-      camera={{ position: [0, 1.4, 9], fov: 40 }}
-      // color="#000000"
+      camera={{ position: [0, 1.2, 8], fov: 35 }}
+      // style={{ backgroundColor: "blue" }}
     >
       <ambientLight intensity={0.6} />
       <directionalLight
         castShadow
-        position={[-2, 5, 1.5]}
+        position={[-2.2, 6, 2.5]}
         intensity={1.9}
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}

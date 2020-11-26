@@ -8,7 +8,7 @@ body {
   /* overflow-y: hidden; */
   background-color: #f8f8f4;
   position: fixed;
-  padding: 3rem 6rem;
+  padding: 3vh 6vw;
 }
 
 code {
@@ -33,6 +33,7 @@ code {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html,
