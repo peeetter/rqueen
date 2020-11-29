@@ -2,11 +2,15 @@
   width: 150px;
   height: 45px;
   border-radius: 40px;
-  font-family: Open Sans;
+  font-family: Open Sans Semibold;
   font-size: 1.1rem;
   background-color: #ff5858;
   color: white;
   text-align: center;
   padding-top: 0.6rem;
   cursor: pointer;
+}
+
+.Button:hover {
+  opacity: 0.9;
 }

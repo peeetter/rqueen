@@ -1,16 +1,14 @@
 .what-we-do {
-  /* background-color: white; */
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
+  overflow-y: auto;
 }
 
 .LeftSide {
   flex: 1;
-  /* padding-left: 7%; */
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,12 +16,20 @@
   min-width: 300px;
 }
 
-.LeftSide p {
-  margin: 19px 0;
+.LeftSide h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #3b3b3a;
 }
 
 .LeftSide p {
-  margin: 20px 0 20px 0;
+  margin: 0;
+  max-width: 600px;
+}
+
+p.LastOne {
+  margin-bottom: 30px;
 }
 
 .RightSide {
@@ -31,6 +37,10 @@
   flex: 1;
   margin: auto;
   min-width: 300px;
+}
+
+.HireUsButtonContainer {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -50,5 +60,27 @@
   }
   .LeftSide h1 {
     width: 100%;
+  }
+  .HireUsButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .what-we-do {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .LeftSide h1 {
+    font-size: 2em;
+    margin-bottom: 18px;
+    margin-top: 18px;
+  }
+
+  p.LastOne {
+    margin-bottom: 18px;
   }
 }
