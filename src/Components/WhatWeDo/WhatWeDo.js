@@ -11,7 +11,7 @@ const WhatWeDo = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { mass: 100, tension: 150, friction: 100 },
+    config: { mass: 50, tension: 150, friction: 100 },
   });
   return (
     <div className="what-we-do">
@@ -20,17 +20,11 @@ const WhatWeDo = () => {
         <p>
           In Through the Looking-Glass by Lewis Carroll, the Red Queen is a
           character who needs to keep running in order to stay in the same
-          place.
-        </p>
-        <p>
-          Likewise, we believe that in a world which is changing more rapidly
-          than ever, companies need to constantly evolve to keep up with their
-          competition.
-        </p>
-        <p className="LastOne">
-          We hold this to be as true for ourselves as for our customers, and we
-          constantly strive to make the current project more amazing than the
-          last one.
+          place. Likewise, we believe that in a world which is changing more
+          rapidly than ever, companies need to constantly evolve to keep up with
+          their competition. We hold this to be as true for ourselves as for our
+          customers, and we constantly strive to make the current project more
+          amazing than the last one.
         </p>
         <div className="HireUsButtonContainer">
           <Button text="HIRE US" onClick={() => history.push("/contact")} />

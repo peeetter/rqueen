@@ -1,16 +1,21 @@
 .Button {
   width: 150px;
-  height: 45px;
-  border-radius: 40px;
+  /* height: 40px; */
+  border-radius: 5px;
+  padding: 10px;
   font-family: Open Sans Semibold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background-color: #ff5858;
   color: white;
   text-align: center;
-  padding-top: 0.6rem;
+  /* padding-top: 0.6rem; */
   cursor: pointer;
+  margin: 20px 0;
+  box-shadow: 0 3px 7px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .Button:hover {
-  opacity: 0.9;
+  background-color: #ff7b7b;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
