@@ -12,11 +12,6 @@ function Header() {
 
       <div className="navbar">
         <ul className="navbar-menu">
-          {/* <li className="navbar-btn">
-            <NavLink activeClassName="is-active" to="/" className="link" exact>
-              What we do
-            </NavLink>
-          </li> */}
           <li className="navbar-btn">
             <NavLink
               activeClassName="is-active"
@@ -24,7 +19,7 @@ function Header() {
               className="link"
               exact
             >
-              About
+              ABOUT
             </NavLink>
           </li>
           <li className="navbar-btn">
@@ -34,7 +29,7 @@ function Header() {
               className="link"
               exact
             >
-              Contact
+              CONTACT
             </NavLink>
           </li>
         </ul>
